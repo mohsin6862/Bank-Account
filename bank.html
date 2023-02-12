@@ -17,35 +17,37 @@
             <div class="grid grid-cols-3 w-3/4 mx-auto gap-5">
                 <div class="bg-green-300 p-8 rounded-lg">
                     <h1 class="text-4xl font-semibold text-white text-center mb-3">Deposit</h1>
-                    <h1 class="text-3xl font-semibold text-white text-center">$00</h1>
+                    <h1 class="text-3xl font-semibold text-white text-center">$<span id="previous-deposit">00</span></h1>
                 </div>
                 <div class="bg-orange-300 p-8 rounded-lg">
                     <h1 class="text-4xl font-semibold text-white text-center mb-3">Withdraw</h1>
-                    <h1 class="text-3xl font-semibold text-white text-center">$00</h1>
+                    <h1 class="text-3xl font-semibold text-white text-center">$<span id="Withdraw-amount">00</span></h1>
                 </div>
                 <div class="bg-teal-300 p-8 rounded-lg">
                     <h1 class="text-4xl font-semibold text-white text-center mb-3">Balance</h1>
-                    <h1 class="text-3xl font-semibold text-white text-center">$2000</h1>
+                    <h1  class="text-3xl font-semibold text-white text-center">$<span id="savings">2000</span></h1>
                 </div>
             </div>
             <div class="grid grid-cols-2 w-3/4 mx-auto mt-5 gap-5">
                 <div class="bg-teal-300 p-8 rounded-lg ">
-                    <h1 class="text-4xl font-semibold mb-6 text-center ">Please Deposit</h1>
-                    <input class="block w-3/4 mb-5 mx-auto rounded-lg pl-5" type="text" name="" id="" placeholder="Enter the $ ammount you want to deposit ">
+                    <h1 class="text-4xl font-semibold mb-6 text-center text-white ">Please Deposit</h1>
+                    <input class="block w-3/4 mb-5 mx-auto rounded-lg pl-5" type="text" name="" id="deposit-field" placeholder="Enter the $ ammount you want to deposit ">
                     
-                    <button class="bg-amber-500 w-2/4 mx-auto ml-28 text-xl font-semibold text-white px-8 py-1 rounded-xl  hover:bg-amber-600 ">Deposit</button>
+                    <button id="deposit-btn" class="bg-amber-500 w-2/4 mx-auto ml-28 text-xl font-semibold text-white px-8 py-1 rounded-xl  hover:bg-amber-600 ">Deposit</button>
 
                 </div>
                 <div class="bg-blue-300 p-8 rounded-lg ">
-                    <h1 class="text-4xl font-semibold mb-6 text-center ">Please Withdraw</h1>
-                    <input class="block w-3/4 mb-5 mx-auto rounded-lg pl-3" type="text" name="" id="" placeholder="Enter the $ ammount you want to Withdraw ">
+                    <h1 class="text-4xl font-semibold mb-6 text-center  text-white ">Please Withdraw</h1>
+                    <input class="block w-3/4 mb-5 mx-auto rounded-lg pl-3" type="text" name="" id="withdraw-field" placeholder="Enter the $ ammount you want to Withdraw ">
                     
-                    <button class="bg-amber-500 w-2/4 mx-auto ml-28 text-xl font-semibold text-white px-8 py-1 rounded-xl hover:bg-amber-600 ">Withdraw</button>
+                    <button id="Withdraw-btn" class="bg-amber-500 w-2/4 mx-auto ml-28 text-xl font-semibold text-white px-8 py-1 rounded-xl hover:bg-amber-600 ">Withdraw</button>
 
                 </div>
             </div>
         </section>
     </main>
     
+
+    <script src="js/bank.js"></script>
 </body>
 </html>
